@@ -2,7 +2,7 @@
 function watermark(settings) {
     // 精简默认设置（只保留必要参数）
     const defaultSettings = {
-        watermark_txt: "ID 禁止截图",
+        watermark_txt: "禁止随意外传",
         watermark_color: '#aaa',
         watermark_alpha: 0.3, // 透明度
         watermark_fontsize: '18px', // 字体大小
@@ -66,3 +66,4 @@ function getNow() {
     const d = new Date();
     return `${d.getFullYear()}年${(d.getMonth() + 1).toString().padStart(2, '0')}月${d.getDate().toString().padStart(2, '0')}日 ${d.getHours().toString().padStart(2, '0')}时${d.getMinutes().toString().padStart(2, '0')}分${d.getSeconds().toString().padStart(2, '0')}秒`;
 }
+
