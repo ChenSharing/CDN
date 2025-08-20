@@ -58,7 +58,7 @@ function watermark(settings) {
 // 页面加载完成后初始化水印
 window.addEventListener('load', () => {
     watermark({
-        watermark_txt: `ID ${getNow()} 禁止截图`
+       watermark_txt: defaultSettings.watermark_txt
     });
 });
 
@@ -67,3 +67,4 @@ function getNow() {
     const d = new Date();
     return `${d.getFullYear()}年${(d.getMonth() + 1).toString().padStart(2, '0')}月${d.getDate().toString().padStart(2, '0')}日 ${d.getHours().toString().padStart(2, '0')}时${d.getMinutes().toString().padStart(2, '0')}分${d.getSeconds().toString().padStart(2, '0')}秒`;
 }
+
